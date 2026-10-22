@@ -8,18 +8,34 @@ __pycache__/
 .coverage
 htmlcov/
 
-# Local virtual environment
+# Local virtual environments
 .venv/
 venv/
 ENV/
+env/
 
-# Project generated artifacts (keep .gitkeep)
+# Generated runtime data and test artifacts (preserve directory skeletons)
 data/*.json
 reports/*.json
 !data/.gitkeep
 !reports/.gitkeep
+*.tmp
 
-# Node & IDE
+# Root-level temporary lab environments
+/lab/
+/lab_*/
+/demo_*/
+/tamper_*/
+
+# Local agent & npm files (keep repository pure Python)
+.agents/
+.planning/
 node_modules/
+package.json
+package-lock.json
+
+# IDE and OS files
 .vscode/
 .idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+{
+  "app_name": "SecureCorporatePortal",
+  "version": "1.0.0",
+  "environment": "production",
+  "debug": false,
+  "allowed_origins": [
+    "https://portal.company.internal"
+  ]
+}
