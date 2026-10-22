@@ -82,6 +82,15 @@ class ChangeEntry:
 
 
 @dataclass
+class ScanResult:
+    """Represents the raw outcome of scanning a target directory before comparison."""
+    target_path: str
+    records: Dict[str, FileRecord]
+    errors: List[Dict[str, str]] = field(default_factory=list)
+    is_complete: bool = True
+
+
+@dataclass
 class ScanReport:
     """Represents a complete comparison report between a baseline and current filesystem."""
     schema_version: str
@@ -104,3 +113,4 @@ class ScanReport:
             "changes": [c.to_dict() for c in self.changes],
             "errors": self.errors,
         }
+
