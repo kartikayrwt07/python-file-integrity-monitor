@@ -147,7 +147,7 @@ In security operations and automated CI/CD pipelines, exit codes allow monitorin
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/python-file-integrity-monitor.git
+git clone https://github.com/kartikayrwt07/python-file-integrity-monitor.git
 cd python-file-integrity-monitor
 ```
 
