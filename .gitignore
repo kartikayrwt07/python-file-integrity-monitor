@@ -1,0 +1,25 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local virtual environment
+.venv/
+venv/
+ENV/
+
+# Project generated artifacts (keep .gitkeep)
+data/*.json
+reports/*.json
+!data/.gitkeep
+!reports/.gitkeep
+
+# Node & IDE
+node_modules/
+.vscode/
+.idea/
